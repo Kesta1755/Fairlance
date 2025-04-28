@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, X, Users, Briefcase, User, LogIn } from 'lucide-react';
-import { Link } from './ui/Link';
+import { Menu, X, Users, Briefcase, Shield, LogIn, Sparkles } from 'lucide-react';
+import { Link as RouterLink } from 'react-router-dom';
+import Link from './ui/Link';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <Link href="/projects" className="text-gray-700 hover:text-blue-600 flex items-center">
               <Briefcase className="h-4 w-4 mr-1" />
               <span>Projects</span>
@@ -29,7 +30,15 @@ const Navbar: React.FC = () => {
               <Users className="h-4 w-4 mr-1" />
               <span>Freelancers</span>
             </Link>
-            <Link href="/login" className="text-gray-700 hover:text-blue-600 flex items-center">
+            <RouterLink to="/escrow-payment" className="text-gray-700 hover:text-blue-600 flex items-center">
+              <Shield className="h-4 w-4 mr-1" />
+              <span>Escrow Payments</span>
+            </RouterLink>
+            <RouterLink to="/mockups" className="text-gray-700 hover:text-blue-600 flex items-center">
+              <Sparkles className="h-4 w-4 mr-1" />
+              <span>Demos</span>
+            </RouterLink>
+            <Link href="/login" className="text-gray-700 hover:text-blue-600 flex items-center ml-4">
               <LogIn className="h-4 w-4 mr-1" />
               <span>Log In</span>
             </Link>
@@ -77,6 +86,22 @@ const Navbar: React.FC = () => {
               <Users className="h-4 w-4 mr-2" />
               <span>Freelancers</span>
             </Link>
+            <RouterLink 
+              to="/escrow-payment" 
+              className="block py-2 text-gray-700 hover:text-blue-600 flex items-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Shield className="h-4 w-4 mr-2" />
+              <span>Escrow Payments</span>
+            </RouterLink>
+            <RouterLink 
+              to="/mockups" 
+              className="block py-2 text-gray-700 hover:text-blue-600 flex items-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Sparkles className="h-4 w-4 mr-2" />
+              <span>Demos</span>
+            </RouterLink>
             <Link 
               href="/login" 
               className="block py-2 text-gray-700 hover:text-blue-600 flex items-center"

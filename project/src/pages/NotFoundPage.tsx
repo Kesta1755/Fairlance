@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { AlertTriangle } from 'lucide-react';
-import { Link } from '../components/ui/Link';
+import Link from '../components/ui/Link';
 
 const NotFoundPage: React.FC = () => {
   return (

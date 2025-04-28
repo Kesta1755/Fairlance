@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from '../ui/Link';
+import Link from '../ui/Link';
 
 const Hero: React.FC = () => {
   return (

@@ -7,6 +7,7 @@ import Testimonials from '../components/home/Testimonials';
 import FeatureComparison from '../components/home/FeatureComparison';
 import Categories from '../components/home/Categories';
 import SmartFeatures from '../components/home/SmartFeatures';
+import FeaturesPromo from '../components/home/FeaturesPromo';
 
 const HomePage: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage: React.FC = () => {
         <HowItWorks />
         <Categories />
         <Testimonials />
+        <FeaturesPromo />
         <FeatureComparison />
       </main>
       <Footer />

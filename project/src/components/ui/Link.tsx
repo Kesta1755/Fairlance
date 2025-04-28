@@ -7,7 +7,7 @@ interface LinkProps {
   onClick?: () => void;
 }
 
-export const Link: React.FC<LinkProps> = ({ href, className, children, onClick }) => {
+const Link: React.FC<LinkProps> = ({ href, className, children, onClick }) => {
   return (
     <a 
       href={href} 
@@ -18,3 +18,5 @@ export const Link: React.FC<LinkProps> = ({ href, className, children, onClick }
     </a>
   );
 };
+
+export default Link;

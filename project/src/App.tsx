@@ -1,9 +1,18 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { ConvexClientProvider } from './convex/ConvexClientProvider';
+import { AuthProvider } from './hooks/useAuth';
 import Router from './router';
 
 function App() {
   return (
-    <Router />
+    <ConvexClientProvider>
+      <AuthProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </AuthProvider>
+    </ConvexClientProvider>
   );
 }
 

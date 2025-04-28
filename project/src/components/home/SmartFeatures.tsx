@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Users, DollarSign, Globe, Sparkles, Target, Shield, BarChart, Clock } from 'lucide-react';
+import { Brain, Users, DollarSign, Globe, Sparkles, Target, Shield, BarChart, Clock, Briefcase } from 'lucide-react';
 
 const SmartFeatures: React.FC = () => {
   return (
@@ -134,6 +134,127 @@ const SmartFeatures: React.FC = () => {
               <h4 className="text-lg font-medium text-gray-900 mb-2">Fair Pricing</h4>
               <p className="text-gray-600">Suggests optimal price range based on market data</p>
             </div>
+          </div>
+        </div>
+        
+        <div className="mt-12">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">How FairLance Works</h3>
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
+            Our fair-focused approach ensures everyone gets an equal opportunity to succeed.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h4 className="text-xl font-semibold text-blue-600 mb-6 flex items-center">
+                <Users className="h-6 w-6 mr-2" />
+                Freelancer Experience
+              </h4>
+              
+              <ol className="space-y-6">
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold mr-4">1</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Complete your profile</h5>
+                    <p className="text-gray-600">Add your skills, portfolio, timezone, and experience level</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold mr-4">2</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Set your preferred pricing</h5>
+                    <p className="text-gray-600">Guided by our Fair Pricing suggestions based on your skills and location</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold mr-4">3</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Get invited to relevant projects</h5>
+                    <p className="text-gray-600">No more random bidding—only projects that match your skills</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold mr-4">4</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Accept or pass on invitations</h5>
+                    <p className="text-gray-600">No punishment for passing—we want the right fit for everyone</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold mr-4">5</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Get hired based on skills and fit</h5>
+                    <p className="text-gray-600">Not who underbids faster—fair rates for quality work</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h4 className="text-xl font-semibold text-green-600 mb-6 flex items-center">
+                <Briefcase className="h-6 w-6 mr-2" />
+                Client Experience
+              </h4>
+              
+              <ol className="space-y-6">
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-semibold mr-4">1</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Create your project</h5>
+                    <p className="text-gray-600">Guided by a friendly AI assistant that asks the right questions</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-semibold mr-4">2</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">System analyzes and finds matches</h5>
+                    <p className="text-gray-600">Our AI identifies the top 5-10 freelancers perfectly suited for your project</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-semibold mr-4">3</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Review freelancer matches</h5>
+                    <p className="text-gray-600">See skills, portfolio samples, and suggested fair pricing for each match</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-semibold mr-4">4</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Choose your freelancer</h5>
+                    <p className="text-gray-600">Or request a second matching round if you'd like more options</p>
+                  </div>
+                </li>
+                
+                <li className="flex">
+                  <div className="flex-shrink-0 h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-semibold mr-4">5</div>
+                  <div>
+                    <h5 className="font-medium text-gray-900">Start your project with confidence</h5>
+                    <p className="text-gray-600">Fair rates, qualified talent, and transparent processes</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Join the FairLance Revolution</h3>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              Where talent meets opportunity, fairly. No endless bidding wars. No race to the bottom.<br />
+              Just quality work, fair pricing, and equal opportunity for all.  
+            </p>
+            <a 
+              href="/signup" 
+              className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-300 text-lg"
+            >
+              Sign Up and Get Started
+            </a>
           </div>
         </div>
       </div>
